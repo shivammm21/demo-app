@@ -2,13 +2,13 @@ name: CI-CD Pipeline
 
 on:
   push:
-    branches: ["develop"]
+    branches: ["main"]
 
 jobs:
 
   # 🔨 BUILD JOB
   build:
-    runs-on: ubuntu-latest
+    runs-on: amazon-latest
 
     steps:
       - name: 📥 Checkout Code
